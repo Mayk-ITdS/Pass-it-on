@@ -3,7 +3,9 @@ import styles from "../Hero/Hero.module.scss";
 export const Hero = () => {
   return (
     <div className={styles.heroContainer}>
-      <div className={styles.image}></div>
+      <div className={styles.heroImageContainer}>
+        <div className={styles.image}></div>
+      </div>
       <div className={styles.heroContent}>
         <div className={styles.heroContentContent}>
           <h4>We need Your help!</h4>

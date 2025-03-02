@@ -2,16 +2,18 @@ $primary-color: #1e3c72;
 $secondary-color: #2a5298;
 
 .navContainer {
+  box-sizing: border-box;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-right: 100px;
   padding: 20px;
+  margin-bottom: 50px;
+  z-index: 44;
 }
 
 .navList {
   margin-top: 100px;
-
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -21,7 +23,6 @@ $secondary-color: #2a5298;
 .navItem {
   display: flex;
   justify-content: center;
-
   align-items: center;
   min-width: 70px;
   max-width: fit-content;
@@ -34,7 +35,7 @@ $secondary-color: #2a5298;
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     color: #ffcc00;
     cursor: pointer;
     border: 1px solid black;

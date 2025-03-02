@@ -1,0 +1,19 @@
+.fourStepsContainer {
+  min-height: 325px;
+  height: auto;
+  background: #f0f1f1 0% 0% no-repeat padding-box;
+  display: flex;
+  .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 70px;
+  }
+  .list li {
+    display: flex;
+    flex-direction: column;
+    height: 172px;
+    min-width: 130px;
+  }
+}

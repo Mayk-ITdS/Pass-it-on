@@ -1,0 +1,25 @@
+.fourStepsEnoughContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
+  margin-bottom: 34px;
+  height: 110px;
+}
+
+.fourStepsEnough {
+  font-family: "Open Sans, Regular";
+  font-size: 38px;
+  color: #3c3c3c;
+  letter-spacing: -0.76px;
+  margin-bottom: 31.04px;
+  height: 52px;
+}
+
+.fourStepsDecoration {
+  width: 253px;
+  height: 33px;
+  background: transparent url("../../../assets/Decoration.svg") 0% 0% no-repeat
+    padding-box;
+}

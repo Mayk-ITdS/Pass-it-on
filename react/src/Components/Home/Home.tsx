@@ -1,5 +1,7 @@
+import { FourSteps } from "./FourSteps/FourSteps";
 import { Hero } from "./Hero/Hero";
 import { Nav } from "./Nav/Nav";
+import { StepsHeader } from "./StepsHeader/StepsHeader";
 import { ThreeColumns } from "./ThreeColumns/ThreeColumns";
 
 export const Home: React.FC = () => {
@@ -8,6 +10,8 @@ export const Home: React.FC = () => {
       <Nav />
       <Hero />
       <ThreeColumns />
+      <StepsHeader />
+      <FourSteps />
     </>
   );
 };
