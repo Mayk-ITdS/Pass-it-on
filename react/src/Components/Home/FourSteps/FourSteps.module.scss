@@ -1,8 +1,12 @@
 .fourStepsContainer {
+  margin: 0 auto;
   min-height: 325px;
   height: auto;
   background: #f0f1f1 0% 0% no-repeat padding-box;
   display: flex;
+  min-width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  overflow-x: visible;
   .list {
     display: flex;
     justify-content: center;

@@ -4,16 +4,18 @@ import { Hero } from "./Hero/Hero";
 import { Nav } from "./Nav/Nav";
 import { StepsHeader } from "./StepsHeader/StepsHeader";
 import { ThreeColumns } from "./ThreeColumns/ThreeColumns";
-
+import styles from "./Home.module.scss";
 export const Home: React.FC = () => {
   return (
     <>
-      <Nav />
-      <Hero />
-      <ThreeColumns />
-      <StepsHeader />
-      <FourSteps />
-      <AboutPhoto />
+      <div className={styles.homeContainer}>
+        <Nav />
+        <Hero />
+        <ThreeColumns />
+        <StepsHeader />
+        <FourSteps />
+        <AboutPhoto />
+      </div>
     </>
   );
 };
