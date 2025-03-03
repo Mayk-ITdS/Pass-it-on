@@ -10,6 +10,7 @@ export const Hero = () => {
         <div className={styles.heroContentContent}>
           <h4>We need Your help!</h4>
           <h4>Pass on your stuff if not needed into trusted hands </h4>
+          <span className={styles.decorationGit}></span>
         </div>
         <div className={styles.heroButtons}>
           <button>Pass on</button>

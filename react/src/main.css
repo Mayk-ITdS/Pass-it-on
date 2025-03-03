@@ -5,10 +5,25 @@
   overflow-x: hidden;
 }
 body {
+  margin: 0 auto;
   overflow-x: hidden;
   min-height: 100vh;
   height: auto;
 }
-* {
+/* * {
   outline: 1px solid red;
+} */
+
+.fullWidthSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  padding: 50px 0;
+}
+
+.contentWrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
 }

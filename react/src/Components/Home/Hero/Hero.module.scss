@@ -9,6 +9,13 @@
   position: relative;
 }
 
+.decorationGit {
+  margin-top: 25px;
+  width: 270px;
+  height: 33px;
+  background: transparent url("./Decoration.svg") 0% 0% no-repeat padding-box;
+}
+
 .image {
   display: block;
   position: absolute;
@@ -40,7 +47,6 @@
   align-self: flex-end;
   justify-content: center;
   height: 100%;
-
   color: black;
   flex-grow: 1;
   .heroContentContent {
@@ -55,19 +61,8 @@
       letter-spacing: 3px;
       margin-bottom: 3px;
       font-size: 40px;
-
       position: relative;
       font-family: "Open Sans,serif";
-      &:nth-of-type(2)::after {
-        content: "";
-        display: flex;
-        left: 50px;
-        position: absolute;
-        background-image: "url(Pass-it-on/react/src/assets/Decoration.svg)";
-        border-bottom: 1.5px solid grey;
-        width: 90%;
-        height: 10px;
-      }
     }
   }
   .heroButtons {

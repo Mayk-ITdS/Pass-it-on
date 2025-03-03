@@ -1,3 +1,4 @@
+import { AboutPhoto } from "./AboutPhoto/AboutPhoto";
 import { FourSteps } from "./FourSteps/FourSteps";
 import { Hero } from "./Hero/Hero";
 import { Nav } from "./Nav/Nav";
@@ -12,6 +13,7 @@ export const Home: React.FC = () => {
       <ThreeColumns />
       <StepsHeader />
       <FourSteps />
+      <AboutPhoto />
     </>
   );
 };
