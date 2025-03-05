@@ -5,6 +5,7 @@ import { Nav } from "./Nav/Nav";
 import { StepsHeader } from "./StepsHeader/StepsHeader";
 import { ThreeColumns } from "./ThreeColumns/ThreeColumns";
 import styles from "./Home.module.scss";
+import { WhoWeHelp } from "./WhoWeHelp/WhoWeHelp";
 export const Home: React.FC = () => {
   return (
     <>
@@ -15,6 +16,7 @@ export const Home: React.FC = () => {
         <StepsHeader />
         <FourSteps />
         <AboutPhoto />
+        <WhoWeHelp />
       </div>
     </>
   );

@@ -23,14 +23,16 @@ const state = [
 
 export const ThreeColumns = () => {
   return (
-    <div className={styles.container}>
-      {state.map((obj) => (
-        <div className={styles.column}>
-          <h1>{obj.quantity}</h1>
-          <span>{obj.action}</span>
-          <p>{obj.decript}</p>
-        </div>
-      ))}
+    <div className={styles.threeColumnsContainer}>
+      <div className={styles.columnsContainer}>
+        {state.map((obj) => (
+          <div className={styles.column}>
+            <h1 className={styles.columnH1}>{obj.quantity}</h1>
+            <span className={styles.columnAction}>{obj.action}</span>
+            <p className={styles.columnDescription}>{obj.decript}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

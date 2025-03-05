@@ -1,17 +1,42 @@
-.container {
+@use "../../../Scss/mixins" as mixins;
+
+.threeColumnsContainer {
+  display: flex;
+  margin: 0 auto;
   height: 300px;
+  @include mixins.FullWidth;
+  background: transparent url("../../../assets/3\ Columns\ Background@2x.png");
+}
+
+.columnsContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  background: transparent url("../../../assets/3\ Columns\ Background@2x.png");
+  @include mixins.Home;
 
   .column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    width: 15%;
+
+    &H1 {
+      margin: 0;
+      font-size: 90px;
+    }
+
+    &Action {
+      margin-top: 20px;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    &Description {
+      font-size: 16px;
+      margin-top: 20px;
+    }
   }
 }

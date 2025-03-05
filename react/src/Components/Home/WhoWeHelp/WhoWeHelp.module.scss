@@ -1,0 +1,61 @@
+@use "../../../Scss/mixins" as mixins;
+
+.whoWeHelpContainer {
+  @include mixins.FullWidth;
+  margin-top: 70px;
+  height: 863px;
+  .entitiesPaginationContainer {
+    @include mixins.Home;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &Head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &Title {
+      font-family: "Open Sans, Regular";
+      font-size: 52px;
+      text-align: center;
+      color: black;
+    }
+    &Deco {
+      width: 253px;
+      height: 33px;
+      margin-top: 31px;
+      background: transparent url("../../../assets/Decoration.svg") 0% 0%
+        no-repeat padding-box;
+    }
+  }
+}
+.entitiesMain {
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  &Buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 107px;
+
+    button {
+      padding: 8px 10%;
+      text-align: center;
+      font-size: 24px;
+      border: 2px solid grey;
+      background-color: white;
+    }
+  }
+}
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  .entitiesDesc {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 22px;
+    width: 30%;
+    align-self: center;
+  }
+}

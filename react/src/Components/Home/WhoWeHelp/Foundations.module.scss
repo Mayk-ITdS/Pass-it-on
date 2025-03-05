@@ -1,0 +1,56 @@
+@use "../../../Scss/mixins" as mixins;
+.foundationsContainer {
+  @include mixins.Home;
+
+  .orgInfoContentDiv {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: grey;
+      bottom: -31px;
+    }
+    .listFirstRow {
+      margin-top: 31px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .orgName {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .orgItems {
+      }
+    }
+  }
+  .orgMission {
+  }
+  .buttonsDiv {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 50px;
+    gap: 10px;
+    align-items: center;
+    button {
+      text-align: center;
+      background-color: white;
+      height: 50px;
+      width: 40px;
+      padding: 15px 10px;
+      border: none;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    button:focus {
+      border: 1px solid grey;
+    }
+  }
+}

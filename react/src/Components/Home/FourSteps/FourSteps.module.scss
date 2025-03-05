@@ -1,23 +1,28 @@
-.fourStepsContainer {
-  margin: 0 auto;
-  min-height: 325px;
-  height: auto;
-  background: #f0f1f1 0% 0% no-repeat padding-box;
-  display: flex;
-  min-width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  overflow-x: visible;
-  .list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+@use "../../../Scss/mixins" as mixins;
 
-    flex-grow: 1;
+.fourFullWidthContainer {
+  @include mixins.FullWidth;
+  background: #f0f1f1 0% 0% no-repeat padding-box;
+  min-height: 325px;
+  display: flex;
+  align-items: center;
+}
+
+.fourStepsContainer {
+  @include mixins.Home;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
   .list li {
     display: flex;
-    flex-grow: 1;
+    width: 128px;
     align-items: center;
     flex-direction: column;
   }
