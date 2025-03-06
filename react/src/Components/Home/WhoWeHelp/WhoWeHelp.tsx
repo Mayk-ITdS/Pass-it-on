@@ -7,7 +7,7 @@ export const WhoWeHelp: React.FC = () => {
   const [openComponent, setOpenComponent] = useState(0);
 
   return (
-    <div className={styles.whoWeHelpContainer}>
+    <div id="fundations" className={styles.whoWeHelpContainer}>
       <div className={styles.entitiesPaginationContainer}>
         <section className={styles.entitiesPaginationContainerHead}>
           <span className={styles.entitiesPaginationContainerTitle}>
@@ -43,7 +43,8 @@ export const WhoWeHelp: React.FC = () => {
               pomagają i czego potrzebują.
             </section>
             <div id="pages" className="pages">
-              {openComponent === 1 && <Foundations />}
+              {(openComponent === 0 || openComponent === 1) && <Foundations />}
+
               {openComponent === 2 && <GovernmentOrgs />}
               {openComponent === 3 && <LocalOrgs />}
             </div>

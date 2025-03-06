@@ -11,7 +11,7 @@ const navElements = {
 const listElemetns = (obj: Record<string, string>) => {
   return Object.entries(obj).map(([key, value]) => (
     <li key={key} className={styles.navItem}>
-      {value}
+      <a href={key === "orgList" ? "#fundations" : ""}>{value}</a>
     </li>
   ));
 };

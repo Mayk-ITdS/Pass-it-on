@@ -1,0 +1,17 @@
+.fullWidthContainer {
+  margin: 0 auto;
+  min-width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  margin-top: 100px;
+  height: 1026px;
+  .backgroundImage {
+    background: url("./Background-Contact-Form.jpg");
+    background-size: cover;
+    height: 1026px;
+    width: 100%;
+    z-index: 33;
+  }
+}
